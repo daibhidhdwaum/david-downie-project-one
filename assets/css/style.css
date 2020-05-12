@@ -29,7 +29,9 @@ ul{
 }
 
 h1,
-li a{
+li a,
+h2,
+button{
     font-family: 'Nova Flat', sans-serif;
 }
 
@@ -47,10 +49,16 @@ li a{
 
 .navbar li{
     display: inline-block;
+    padding: 1% 1%;
+}
+
+.navbar{
+      text-align: center;
 }
 
 header li a,
-h1{
+h1,
+h2{
     color: #186684;
 }
 

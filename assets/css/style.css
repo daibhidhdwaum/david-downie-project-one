@@ -14,6 +14,9 @@ header{
     background-image: url(../images/image-1@2x.png);
     width: 100vw;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .community{
@@ -23,9 +26,35 @@ header{
 ul{
     list-style-type: none;
     padding: 0;
+}
 
+h1,
+li a{
+    font-family: 'Nova Flat', sans-serif;
+}
+
+h1{
+    font-size: 10rem;
+    background-color: #E3E4EA;
+    opacity: 89%;
+    width: 30%;
 }
 
 li a{
     text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+header li a,
+h1{
+    color: #186684;
+}
+
+i,
+header li:first-child a{
+    color: #E85B26;
 }

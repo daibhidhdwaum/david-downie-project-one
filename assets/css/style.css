@@ -1,7 +1,31 @@
+*{
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+html{
+    font-size: 63.5%;
+}
+
 header{
     background-image: url(../images/image-1@2x.png);
+    width: 100vw;
+    height: 100vh;
 }
 
 .community{
     background-image: url(../images/image-5@2x.png);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+li a{
+    text-decoration: none;
 }

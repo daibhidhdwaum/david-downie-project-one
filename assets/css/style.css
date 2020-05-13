@@ -81,12 +81,23 @@ header li:first-child a{
     color: #E85B26;
 }
 
+/* MAIN SECTION */
+.half-page img,
+.info{
+    width: 50%;
+}
+
+.info,
+.half-page img{
+    float: left;
+}
+
 /* COMMUNITY SECTION */
 .community{
     background-image: url(../images/image-5@2x.png);
 }
 
-.community h2{
+.community li a{
     font-family: 'Catamaran', sans-serif;
 }
 

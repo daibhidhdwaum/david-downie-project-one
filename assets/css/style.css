@@ -41,7 +41,7 @@ button{
     text-transform: uppercase;
     font-size: 1.8rem;
     line-height: 2.9rem;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     padding: 1rem 2rem;
 }
 
@@ -86,7 +86,8 @@ header li:first-child a{
 /* MAIN SECTION */
 h2{
     font-size: 4.2rem;
-    padding: 2rem 0;
+    padding: 0;
+    margin: 2rem 0;
 }
 
 .half-page img,
@@ -100,20 +101,31 @@ h2{
 }
 
 .info{
-    height: 594px;
+    height: 592px;
      padding: 9% 7%;
 }
 
 p{
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
+    line-height: 2.9rem;
 }
 
 .wrapper{
-    max-width: 1400px;
+    max-width: 1330px;
     margin: 0 auto;
 }
 
+.giving-back{
+    background-color: #F4F4F4;
+    padding: 5%; 
+}
+
+.giving-back img{
+    float: left;
+    width: 27%;
+    padding-right: 30px;
+}
 /* COMMUNITY SECTION */
 .community{
     background-image: url(../images/image-5@2x.png);

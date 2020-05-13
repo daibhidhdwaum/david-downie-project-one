@@ -37,17 +37,19 @@ button{
 
 button{
     background-color: transparent;
-    border: 2px solid #E85B26;
+    border: 4px solid #E85B26;
     text-transform: uppercase;
     font-size: 1.8rem;
     line-height: 2.9rem;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
 }
 
 /* HEADER */
 
 header{
     background-image: url(../images/image-1@2x.png);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,6 +84,11 @@ header li:first-child a{
 }
 
 /* MAIN SECTION */
+h2{
+    font-size: 4.2rem;
+    padding: 2rem 0;
+}
+
 .half-page img,
 .info{
     width: 50%;
@@ -90,6 +97,21 @@ header li:first-child a{
 .info,
 .half-page img{
     float: left;
+}
+
+.info{
+    height: 594px;
+     padding: 9% 7%;
+}
+
+p{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* COMMUNITY SECTION */

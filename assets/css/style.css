@@ -41,12 +41,40 @@ button {
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 2.9rem;
-  margin: 2.5rem 0;
-  padding: 1rem 2rem;
+  margin: 2.5rem 0 0;
+  padding: 0.8rem 2rem;
 }
 
-img{
+img {
   width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+p,
+.footer-menu li,
+.stay-updated p,
+.contact-info p {
+  color: #1f2022;
+}
+
+i,
+header li:first-child a {
+  color: #e85b26;
+}
+
+p,
+.address {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+}
+
+.wrapper {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
 }
 
 /* HEADER */
@@ -64,13 +92,22 @@ header {
 h1 {
   font-weight: 300;
   font-size: 12rem;
-  padding: 10px;
+  margin: 0;
+ }
+
+.site-name {
+  padding: 2rem;
   background-color: #e3e4ea;
   opacity: 89%;
-  width: 30%;
+  width: 50rem;
+  /* border: 1px solid red; */
   position: absolute;
   left: 42%;
-  top: 36%;
+  top: 46%;
+}
+
+.navbar {
+  text-align: center;
 }
 
 .navbar li {
@@ -78,109 +115,210 @@ h1 {
   padding: 1% 1%;
 }
 
-.navbar {
-  text-align: center;
+.social-icons {
+  margin: 0 7rem;
+  float: right;
+  margin-top: 22rem;
 }
 
-i,
-header li:first-child a {
-  color: #e85b26;
+.social-icons a i {
+  padding: 1rem;
+  font-size: 2.5rem;
 }
 
 /* MAIN SECTION */
+
+/* half page spread */
+
 h2 {
   font-size: 4.2rem;
   padding: 0;
   margin: 2rem 0;
 }
 
-.half-page {
-  position: relative;
-}
-
-.half-page img,
+.half-page-image-one,
 .info {
   width: 50%;
   float: left;
-  /* position: absolute; */
+}
+
+.half-page-image-two {
+  float: left;
+  width: 50%;
 }
 
 .info {
-  height: 100%;
-  padding: 9% 7%;
-  /* margin: 2%; */
+  padding: 7% 7% 0;
 }
 
-p {
-  font-family: "Catamaran", sans-serif;
-  font-size: 2rem;
-  line-height: 2.9rem;
-}
-
-.wrapper {
-  max-width: 1330px;
-  margin: 0 auto;
-}
+/* full page spread */
+/* text and image */
 
 .giving-back {
   background-color: #f4f4f4;
-  padding: 5%;
+  /* padding: 7%; */
+  clear: both;
 }
 
-.giving-back img {
-  float: left;
-  width: 27%;
-  padding-right: 30px;
+.giving-back-container {
+  /* border: 1px solid red; */
+  margin: 7% 0;
 }
-/* COMMUNITY SECTION */
+
+.giving-back-image {
+  float: left;
+  width: 29%;
+  padding-right: 3rem;
+}
+
+.giving-back-content {
+  float: left;
+  width: 71%;
+}
+
+.giving-back-content button {
+  margin-bottom: 0;
+}
+
+.giving-back h2 {
+  margin-top: 0;
+}
+
+/* community section*/
 .community {
   background-image: url(../images/image-5@2x.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.community-container {
+  background-color: #e3e4ea;
+  opacity: 89%;
+  text-align: center;
+  padding: 5rem;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.com-wrap {
+  width: 70%;
+  margin: 0 auto;
+  padding: 14rem 10rem;
+}
+
+.community ul {
+  width: 31%;
+  float: left;
+  margin: 1%;
+}
+
+.community ul li {
+  padding: 2rem;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+.community i {
+  font-size: 4rem;
+  padding-bottom: 0;
 }
 
 .community li a {
   font-family: "Catamaran", sans-serif;
+  color: #186684;
+  font-size: 3rem;
+  font-weight: 600;
 }
+
+.community-container ul li:first-child {
+  padding-bottom: 0;
+}
+
+/* gallery */
 
 .gram h2 {
   text-align: center;
   margin: 5% 0 4%;
 }
 
-.gram img {
-  width: 30%;
+.gram ul {
+  /* border: 1px solid purple; */
+  clear: both;
+}
+
+.gram ul li {
+  width: calc(33% - 3.6rem);
   float: left;
   margin: 2rem;
+  /* border: 1px solid green; */
+}
+
+.gram ul li:first-child {
+  margin: 2rem 4rem 2rem 0;
+}
+
+.gram ul li:last-child {
+  margin: 2rem 0 2rem 4rem;
 }
 
 /* FOOTER */
 
 footer {
   clear: both;
+  background-color: #f4f4f4;
+  margin-top: 8rem;
 }
 
 footer button {
   background-color: #186684;
   color: #f4f4f4;
+  margin-left: 0;
 }
 
-.footer-menu a{
-color: #1F2022
-}
-
-.footer-menu{
-  text-align: center;
-}
-
-.footer-menu li{
-    display: inline-block;
-}
-
-footer h2{
+footer h2 {
   color: #e85b26;
 }
 
-.copy{
-  background-color: #1F2022;
-  color: #F4F4F4;
+input {
+  padding: 1.4rem;
+  font-size: 2rem;
+  border: none;
+  display: inline-block;
+  width: 70%;
+  font-family: "Catamaran", sans-serif;
+}
+
+.footer-menu {
   text-align: center;
 }
+
+.footer-menu li {
+  display: inline-block;
+  margin-top: 5rem;
+  padding: 1%;
+}
+
+.footer-menu a {
+  color: #1f2022;
+}
+
+.contact-info,
+.stay-updated {
+  float: left;
+  width: 50%;
+}
+
+.stay-updated p {
+  line-height: 0;
+}
+
+.copy {
+  clear: both;
+  background-color: #1f2022;
+  color: #f4f4f4;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+

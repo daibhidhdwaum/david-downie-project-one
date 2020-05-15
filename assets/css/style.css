@@ -321,4 +321,39 @@ input {
   padding: 1rem;
 }
 
+@media (max-width: 1340px) {
+  .wrapper {
+    width: 80%;
+  }
 
+  .info {
+    padding: 3% 5% 0;
+  }
+
+  .com-wrap {
+    width: 90%;
+  }
+
+  section p {
+    font-size: 1.8rem;
+  }
+
+  .gram ul li {
+    width: calc(33% - 3.7rem);
+    float: left;
+    margin: 2rem;
+    /* border: 1px solid green; */
+  }
+
+  .giving-back-image {
+    width: 38%;
+  }
+
+  .giving-back-content {
+    width: 62%;
+  }
+
+  input{
+    width: 50%
+  }
+}

@@ -43,7 +43,7 @@ button {
 
 img {
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   display: block;
 }
 
@@ -54,22 +54,34 @@ p,
   color: #1f2022;
 }
 
-i{
+i,
+footer h2,
+ul.navbar a:hover,
+ul.navbar a:focus {
   color: #e85b26;
 }
 
 p,
 .address {
-  font-family: "Catamaran", sans-serif;
   font-size: 2rem;
   line-height: 2.9rem;
+}
+
+p,
+.address
+.community li a,
+input[type="text"]{
+  font-family: "Catamaran", sans-serif;
 }
 
 .wrapper {
   max-width: 1250px;
   width: 100%;
+}
+
+.com-wrap,
+.wrapper {
   margin: 0 auto;
-  /* border: 1px solid blue; */
 }
 
 /* HEADER */
@@ -110,10 +122,12 @@ h1 {
   padding: 1% 1%;
 }
 
-ul.navbar a:hover,
-ul.navbar a:focus {
-	color: #e85b26;
+label[for="toggle"],
+input[type="checkbox"] {
+  display: none;
 }
+
+
 
 .social-icons {
   margin: 0 7rem;
@@ -202,7 +216,6 @@ h2 {
 
 .com-wrap {
   width: 70%;
-  margin: 0 auto;
   padding: 14rem 10rem;
 }
 
@@ -224,7 +237,6 @@ h2 {
 }
 
 .community li a {
-  font-family: "Catamaran", sans-serif;
   color: #186684;
   font-size: 3rem;
   font-weight: 600;
@@ -275,17 +287,12 @@ footer button {
   margin-left: 0;
 }
 
-footer h2 {
-  color: #e85b26;
-}
-
-input {
+input[type="text"] {
   padding: 1.4rem;
   font-size: 2rem;
   border: none;
   display: inline-block;
   width: 70%;
-  font-family: "Catamaran", sans-serif;
 }
 
 .footer-menu {
@@ -397,10 +404,13 @@ input {
   header {
     background-position: top 10% left 30%;
   }
+
   .wrapper {
     width: 90%;
   }
-
+  .site-name{
+    left: 28%;
+  }
   .half-page-wrapper {
     max-width: 700px;
     width: 100%;
@@ -480,12 +490,17 @@ input {
 @media (max-width: 768px) {
   header {
     width: 100%;
-    background-position-y: -20%;
-    background-position-x: 10%;
+    background-position-y: 80%;
+    background-position-x: 30%;
+  }
+
+  h1{
+    font-size: 7rem;
   }
 
   /* slide menu */
   ul.navbar {
+    display: inline-block;
     width: 100%;
     position: absolute;
     top: 10rem;
@@ -512,48 +527,57 @@ input {
     right: 0;
   }
 
-  input[type="checkbox"]{
+  input[type="checkbox"] {
     display: none;
   }
 
-  label[for="toggle"] i{
-  color: #186684;
-  font-size: 5rem;
-  z-index: 0;
+  label[for="toggle"] i {
+    color: #186684;
+    font-size: 5rem;
+    z-index: 0;
   }
 
-  label[for="toggle"]{
+  label[for="toggle"] {
+    display: inline-block;
     position: absolute;
     right: 7rem;
     top: 3rem;
   }
 
-  .social-icons{
+  .social-icons {
     display: none;
   }
 
   .site-name {
     left: 27%;
+    width: 30.5rem;
   }
+
   .giving-back-image,
   .giving-back-content {
     width: 100%;
   }
 
   .com-wrap {
-    padding: 20%;
+    padding: 13%;
   }
 
   .community ul {
     border: 1px solid green;
     float: none;
     margin: 0 auto;
-    width: 40%;
+    width: 100%;
     padding: 0;
   }
 
   .community-container {
     padding: 5rem 0;
+  }
+
+  .community ul li,
+  .community ul li{
+    padding: 2rem 0;
+    /* display: inline-block; */
   }
 
   .gram ul li,
@@ -562,11 +586,42 @@ input {
     margin: 6% auto;
     width: 100%;
   }
+
+
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  label[for="toggle"] i{
+    font-size: 3.6rem;
+  }
+
+  header{
+    /* background-position: top; */
+    background-size: 320%;
+    background-position-y: 0%;
+    background-position-x: 32%; 
+  }
+
+  h1{
+    font-size: 7rem;
+  }
+
+  .site-name{
+    left: auto;
+    right: 10%;
+    top: 62%;
+    width: 30rem;
+  }
 }
 
 @media (max-width: 320px) {
+
+  
+  .site-name{
+    left: auto;
+    right: 10%;
+    top: 50%;
+    width: 22rem;
+  }
 }

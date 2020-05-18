@@ -107,7 +107,6 @@ h1 {
   background-color: #e3e4ea;
   opacity: 89%;
   width: 50rem;
-  /* border: 1px solid red; */
   position: absolute;
   left: 42%;
   top: 46%;
@@ -171,11 +170,9 @@ h2 {
 .giving-back-container {
   background-color: #f4f4f4;
   clear: both;
-  /* border: 1px solid green; */
 }
 
 .giving-back-outer {
-  /* border: 1px solid purple; */
   padding: 7% 0;
 }
 
@@ -211,7 +208,6 @@ h2 {
   text-align: center;
   padding: 5rem;
   text-align: center;
-  /* border: 1px solid black; */
 }
 
 .com-wrap {
@@ -228,7 +224,6 @@ h2 {
 .community ul li {
   padding: 2rem;
   text-align: center;
-  /* border: 1px solid green; */
 }
 
 .community i {
@@ -254,7 +249,6 @@ h2 {
 }
 
 .gram ul {
-  border: 1px solid purple;
   clear: both;
 }
 
@@ -262,7 +256,6 @@ h2 {
   width: calc(33% - 3.6rem);
   float: left;
   margin: 2rem;
-  /* border: 1px solid green; */
 }
 
 .gram ul li:first-child {
@@ -315,9 +308,10 @@ input[type="text"] {
   width: 50%;
 }
 
-.stay-updated p {
-  line-height: 0;
+.stay-updated h2{
+  margin-bottom: 0;
 }
+
 
 .copy {
   clear: both;
@@ -349,7 +343,6 @@ input[type="text"] {
     width: calc(33% - 3.7rem);
     float: left;
     margin: 2rem;
-    /* border: 1px solid green; */
   }
 
   .giving-back-image {
@@ -415,7 +408,6 @@ input[type="text"] {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid green;
   }
 
   h2 {
@@ -437,7 +429,6 @@ input[type="text"] {
     margin-top: 7%;
     margin-bottom: 7%;
     text-align: center;
-    border: 1px solid red;
   }
 
   .community-container {
@@ -479,7 +470,6 @@ input[type="text"] {
 
   .giving-back-image {
     width: 60%;
-    border: 1px solid red;
     padding: 0;
   }
 
@@ -491,7 +481,6 @@ input[type="text"] {
   .stay-updated {
     float: none;
     text-align: center;
-    border: 1px solid green;
     width: 100%;
   }
 }
@@ -521,7 +510,6 @@ input[type="text"] {
   }
 
   ul.navbar li {
-    /* border: 1px solid green; */
     padding: 1rem;
     width: 100%;
   }
@@ -575,7 +563,6 @@ input[type="text"] {
   }
 
   .community ul {
-    border: 1px solid green;
     float: none;
     margin: 0 auto;
     width: 100%;

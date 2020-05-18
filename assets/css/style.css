@@ -587,6 +587,12 @@ input[type="text"] {
     width: 100%;
   }
 
+  input[type="text"],
+  button[type="submit"]{
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
 
 }
 

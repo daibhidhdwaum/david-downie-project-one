@@ -21,6 +21,12 @@ button {
 
 li a {
   text-decoration: none;
+}
+
+li a,
+p,
+.address,
+input[type="text"] {
   font-size: 2rem;
 }
 
@@ -41,16 +47,21 @@ button {
   padding: 0.8rem 2rem;
 }
 
-img {
+header,
+img,
+.wrapper {
   width: 100%;
-  /* object-fit: cover; */
+}
+
+img {
   display: block;
 }
 
 p,
 .footer-menu li,
 .stay-updated p,
-.contact-info p {
+.contact-info p,
+.footer-menu a {
   color: #1f2022;
 }
 
@@ -63,20 +74,17 @@ ul.navbar a:focus {
 
 p,
 .address {
-  font-size: 2rem;
   line-height: 2.9rem;
 }
 
 p,
-.address
-.community li a,
-input[type="text"]{
+.address .community li a,
+input[type="text"] {
   font-family: "Catamaran", sans-serif;
 }
 
 .wrapper {
   max-width: 1250px;
-  width: 100%;
 }
 
 .com-wrap,
@@ -84,15 +92,60 @@ input[type="text"]{
   margin: 0 auto;
 }
 
-/* HEADER */
+.navbar,
+.community-container,
+.community li a,
+.footer-menu,
+.gram h2,
+.copy{
+  text-align: center;
+}
 
+ .footer-menu li,
+ .navbar li,
+ input[type="text"] {
+  display: inline-block;
+ }
+
+ .half-page-image-one,
+ .social-icons {
+  float: right;
+}
+
+.half-page-image-two,
+.info,
+.giving-back-image,
+.giving-back-content,
+.community ul,
+.gram ul li,
+.contact-info,
+.stay-updated {
+  float: left;
+}
+
+footer
+.gram ul,
+.giving-back-container,
+.copy{
+  clear: both;
+}
+
+.com-wrap,
+input[type="text"]{
+  width: 70%;
+}
+
+header,
+.community{
+background-position: center;
+background-size: cover;
+}
+
+/* HEADER */
 header {
   background-image: url(../images/image-1@2x.png);
-  width: 100%;
   height: 100vh;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 
@@ -112,12 +165,7 @@ h1 {
   top: 46%;
 }
 
-.navbar {
-  text-align: center;
-}
-
 .navbar li {
-  display: inline-block;
   padding: 1% 1%;
 }
 
@@ -126,11 +174,8 @@ input[type="checkbox"] {
   display: none;
 }
 
-
-
 .social-icons {
   margin: 0 7rem;
-  float: right;
   margin-top: 22rem;
 }
 
@@ -140,24 +185,17 @@ input[type="checkbox"] {
 }
 
 /* MAIN SECTION */
-
 /* half page spread */
-
 h2 {
   font-size: 4.2rem;
   padding: 0;
   margin: 2rem 0;
 }
 
+.half-page-image-one,
 .half-page-image-two,
-.info {
-  width: 50%;
-  float: left;
-}
-
-.half-page-image-one {
-  float: right;
-  width: 50%;
+.info{
+  width:50%;
 }
 
 .info {
@@ -166,10 +204,8 @@ h2 {
 
 /* full page spread */
 /* text and image */
-
 .giving-back-container {
   background-color: #f4f4f4;
-  clear: both;
 }
 
 .giving-back-outer {
@@ -177,13 +213,11 @@ h2 {
 }
 
 .giving-back-image {
-  float: left;
   width: 29%;
   padding-right: 3rem;
 }
 
 .giving-back-content {
-  float: left;
   width: 71%;
 }
 
@@ -198,32 +232,25 @@ h2 {
 /* community section*/
 .community {
   background-image: url(../images/image-5@2x.png);
-  background-position: center;
-  background-size: cover;
 }
 
 .community-container {
   background-color: #e3e4ea;
   opacity: 89%;
-  text-align: center;
-  padding: 5rem;
-  text-align: center;
+  padding: 5.2rem;
 }
 
 .com-wrap {
-  width: 70%;
-  padding: 14rem 10rem;
+  padding: 14rem 8rem;
 }
 
 .community ul {
   width: 31%;
-  float: left;
   margin: 1%;
 }
 
 .community ul li {
   padding: 2rem;
-  text-align: center;
 }
 
 .community i {
@@ -242,19 +269,12 @@ h2 {
 }
 
 /* gallery */
-
 .gram h2 {
-  text-align: center;
   margin: 5% 0 4%;
-}
-
-.gram ul {
-  clear: both;
 }
 
 .gram ul li {
   width: calc(33% - 3.6rem);
-  float: left;
   margin: 2rem;
 }
 
@@ -267,9 +287,7 @@ h2 {
 }
 
 /* FOOTER */
-
 footer {
-  clear: both;
   background-color: #f4f4f4;
   margin-top: 8rem;
 }
@@ -282,45 +300,35 @@ footer button {
 
 input[type="text"] {
   padding: 1.4rem;
-  font-size: 2rem;
   border: none;
-  display: inline-block;
-  width: 70%;
-}
-
-.footer-menu {
-  text-align: center;
 }
 
 .footer-menu li {
-  display: inline-block;
   margin-top: 5rem;
   padding: 1%;
 }
 
-.footer-menu a {
-  color: #1f2022;
-}
-
 .contact-info,
 .stay-updated {
-  float: left;
   width: 50%;
 }
 
-.stay-updated h2{
+.stay-updated h2 {
   margin-bottom: 0;
 }
 
-
 .copy {
-  clear: both;
   background-color: #1f2022;
   color: #f4f4f4;
-  text-align: center;
   margin-top: 8rem;
   padding: 1rem;
 }
+
+
+
+
+
+
 
 @media (max-width: 1340px) {
   .wrapper {
@@ -332,7 +340,7 @@ input[type="text"] {
   }
 
   .com-wrap {
-    width: 90%;
+    width: 92%;
   }
 
   section p {
@@ -361,6 +369,10 @@ input[type="text"] {
 @media (max-width: 1160px) {
   .wrapper {
     width: 95%;
+  }
+
+  header {
+    background-position-x: 40%;
   }
 
   h1 {
@@ -401,8 +413,8 @@ input[type="text"] {
   .wrapper {
     width: 90%;
   }
-  .site-name{
-    left: 28%;
+  .site-name {
+    left: 37%;
   }
   .half-page-wrapper {
     max-width: 700px;
@@ -443,19 +455,17 @@ input[type="text"] {
     margin: 0 1rem 0 0;
   }
 
-  .gram ul li:nth-child(2){
+  .gram ul li:nth-child(2) {
     margin: 0 0 0 3rem;
   }
 
-  .gram ul li:nth-child(3){
+  .gram ul li:nth-child(3) {
     margin: 0;
     display: none;
   }
 
-  .gram ul li
-  {
-    width: calc(50% - 2rem)
-    /* margin: 2rem; */
+  .gram ul li {
+    width: calc(50% - 2rem);
   }
 
   .giving-back-image,
@@ -489,11 +499,12 @@ input[type="text"] {
 @media (max-width: 768px) {
   header {
     width: 100%;
-    background-position-y: 80%;
+    /* background-size: 320%; */
+    background-position-y: top;
     background-position-x: 30%;
   }
 
-  h1{
+  h1 {
     font-size: 7rem;
   }
 
@@ -514,15 +525,12 @@ input[type="text"] {
     width: 100%;
   }
 
-
-
   input[type="checkbox"]:checked + ul.navbar {
     right: 0;
     display: inline-block;
-    
   }
 
-    ul.navbar a {
+  ul.navbar a {
     display: inline-block;
     width: 100%;
   }
@@ -549,7 +557,7 @@ input[type="text"] {
   }
 
   .site-name {
-    left: 27%;
+    left: 40%;
     width: 30.5rem;
   }
 
@@ -574,60 +582,57 @@ input[type="text"] {
   }
 
   .community ul li,
-  .community ul li{
+  .community ul li {
     padding: 2rem 0;
-    /* display: inline-block; */
   }
 
   input[type="text"],
-  button[type="submit"]{
+  button[type="submit"] {
     display: block;
     width: 100%;
     margin-top: 2rem;
   }
-
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  label[for="toggle"] i{
+  label[for="toggle"] i {
     font-size: 3.6rem;
   }
 
-  header{
+  header {
     /* background-position: top; */
-    background-size: 320%;
-    background-position-y: 0%;
-    background-position-x: 32%; 
+    background-size: 1200px;
+    background-position-y: top;
+    background-position-x: 32%;
+    height: 58rem;
   }
 
-  h1{
+  h1 {
     font-size: 7rem;
   }
 
-  .site-name{
+  .site-name {
     left: auto;
-    right: 10%;
-    top: 42%;
+    right: 4%;
+    top: 30%;
     width: 30rem;
   }
 
-   label[for="toggle"]{
-     right: 4rem;
-   }
+  label[for="toggle"] {
+    right: 4rem;
+  }
 }
 
 @media (max-width: 320px) {
-
-  
-  .site-name{
+  .site-name {
     left: auto;
     right: 10%;
     top: 30%;
     width: 22rem;
   }
 
-  h1{
+  h1 {
     font-size: 4.8rem;
   }
 }

@@ -130,10 +130,7 @@ footer
   clear: both;
 }
 
-.com-wrap,
-input[type="text"]{
-  width: 70%;
-}
+
 
 header,
 .community{
@@ -161,8 +158,8 @@ h1 {
   opacity: 89%;
   width: 50rem;
   position: absolute;
-  left: 42%;
-  top: 46%;
+  right: 30%;
+  top: 48%;
 }
 
 .navbar li {
@@ -237,11 +234,12 @@ h2 {
 .community-container {
   background-color: #e3e4ea;
   opacity: 89%;
-  padding: 5.2rem;
+  padding: 5rem;
 }
 
 .com-wrap {
   padding: 14rem 8rem;
+   width: 70%;
 }
 
 .community ul {
@@ -301,6 +299,7 @@ footer button {
 input[type="text"] {
   padding: 1.4rem;
   border: none;
+  width: 64%;
 }
 
 .footer-menu li {
@@ -323,12 +322,6 @@ input[type="text"] {
   margin-top: 8rem;
   padding: 1rem;
 }
-
-
-
-
-
-
 
 @media (max-width: 1340px) {
   .wrapper {
@@ -385,6 +378,7 @@ input[type="text"] {
 
   .site-name {
     width: 40rem;
+    right: 22%;
   }
 
   .info {
@@ -414,7 +408,7 @@ input[type="text"] {
     width: 90%;
   }
   .site-name {
-    left: 37%;
+    right: 12%;
   }
   .half-page-wrapper {
     max-width: 700px;
@@ -474,7 +468,9 @@ input[type="text"] {
     margin: 0 auto;
   }
 
-  .giving-back-content {
+  .giving-back-content,
+  .contact-info,
+  .stay-updated {
     text-align: center;
   }
 
@@ -490,7 +486,6 @@ input[type="text"] {
   .contact-info,
   .stay-updated {
     float: none;
-    text-align: center;
     width: 100%;
   }
 }
@@ -499,8 +494,7 @@ input[type="text"] {
 @media (max-width: 768px) {
   header {
     width: 100%;
-    /* background-size: 320%; */
-    background-position-y: top;
+    /* background-position-y: top; */
     background-position-x: 30%;
   }
 
@@ -557,7 +551,7 @@ input[type="text"] {
   }
 
   .site-name {
-    left: 40%;
+    left: 36%;
     width: 30.5rem;
   }
 
@@ -592,6 +586,10 @@ input[type="text"] {
     width: 100%;
     margin-top: 2rem;
   }
+
+  input[type="text"]::placeholder{
+    text-align: center;
+  }
 }
 
 /* Landscape phones and down */
@@ -615,7 +613,7 @@ input[type="text"] {
   .site-name {
     left: auto;
     right: 4%;
-    top: 30%;
+    top: 54%;
     width: 30rem;
   }
 
@@ -627,9 +625,8 @@ input[type="text"] {
 @media (max-width: 320px) {
   .site-name {
     left: auto;
-    right: 10%;
-    top: 30%;
-    width: 22rem;
+    right: 6%;
+    width: 26rem;
   }
 
   h1 {

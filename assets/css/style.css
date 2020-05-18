@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-img {
-  display: block;
-}
-
 html {
   font-size: 63.5%;
 }
@@ -58,8 +54,7 @@ p,
   color: #1f2022;
 }
 
-i,
-header li:first-child a {
+i{
   color: #e85b26;
 }
 
@@ -90,10 +85,10 @@ header {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 12rem;
   margin: 0;
- }
+}
 
 .site-name {
   padding: 2rem;
@@ -113,6 +108,11 @@ h1 {
 .navbar li {
   display: inline-block;
   padding: 1% 1%;
+}
+
+ul.navbar a:hover,
+ul.navbar a:focus {
+	color: #e85b26;
 }
 
 .social-icons {
@@ -136,14 +136,14 @@ h2 {
   margin: 2rem 0;
 }
 
-.half-page-image-one,
+.half-page-image-two,
 .info {
   width: 50%;
   float: left;
 }
 
-.half-page-image-two {
-  float: left;
+.half-page-image-one {
+  float: right;
   width: 50%;
 }
 
@@ -154,15 +154,15 @@ h2 {
 /* full page spread */
 /* text and image */
 
-.giving-back {
+.giving-back-container {
   background-color: #f4f4f4;
-  /* padding: 7%; */
   clear: both;
+  /* border: 1px solid green; */
 }
 
-.giving-back-container {
-  /* border: 1px solid red; */
-  margin: 7% 0;
+.giving-back-outer {
+  /* border: 1px solid purple; */
+  padding: 7% 0;
 }
 
 .giving-back-image {
@@ -242,7 +242,7 @@ h2 {
 }
 
 .gram ul {
-  /* border: 1px solid purple; */
+  border: 1px solid purple;
   clear: both;
 }
 
@@ -353,7 +353,220 @@ input {
     width: 62%;
   }
 
-  input{
-    width: 50%
+  input {
+    width: 50%;
   }
+}
+
+@media (max-width: 1160px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  .site-name {
+    width: 40rem;
+  }
+
+  .info {
+    padding: 2% 3% 0;
+  }
+
+  .community li a {
+    font-size: 2.4rem;
+  }
+
+  .com-wrap {
+    width: 100%;
+  }
+
+  .info h2 {
+    margin-top: 0;
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 960px) {
+  header {
+    background-position: top 10% left 30%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+
+  .half-page-wrapper {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid green;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .half-page-image-one,
+  .half-page-image-two,
+  .info {
+    width: 100%;
+    float: none;
+  }
+
+  .info {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    text-align: center;
+    border: 1px solid red;
+  }
+
+  .community-container {
+    padding: 5rem 2rem;
+  }
+
+  .com-wrap {
+    padding: 14rem 4rem;
+  }
+
+  .gram ul li {
+    width: calc(50% - 4rem);
+    margin: 2rem;
+  }
+
+  .gram ul li:last-child {
+    display: none;
+  }
+
+  .giving-back-image,
+  .giving-back-content {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .giving-back-content {
+    text-align: center;
+  }
+
+  .giving-back-image {
+    width: 60%;
+    border: 1px solid red;
+    padding: 0;
+  }
+
+  .giving-back h2 {
+    margin-top: 2rem;
+  }
+
+  .contact-info,
+  .stay-updated {
+    float: none;
+    text-align: center;
+    border: 1px solid green;
+    width: 100%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    background-position-y: -20%;
+    background-position-x: 10%;
+  }
+
+  /* slide menu */
+  ul.navbar {
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    right: -100%;
+    background-color: #f4f4f4;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+
+  ul.navbar li {
+    /* border: 1px solid green; */
+    padding: 1rem;
+    width: 100%;
+  }
+
+  ul.navbar a {
+    display: inline-block;
+    width: 100%;
+    /* border: 1px solid red; */
+    transition: all 0.3s;
+  }
+
+  input[type="checkbox"]:checked + ul.navbar {
+    right: 0;
+  }
+
+  input[type="checkbox"]{
+    display: none;
+  }
+
+  label[for="toggle"] i{
+  color: #186684;
+  font-size: 5rem;
+  z-index: 0;
+  }
+
+  label[for="toggle"]{
+    position: absolute;
+    right: 7rem;
+    top: 3rem;
+  }
+
+  .social-icons{
+    display: none;
+  }
+
+  .site-name {
+    left: 27%;
+  }
+  .giving-back-image,
+  .giving-back-content {
+    width: 100%;
+  }
+
+  .com-wrap {
+    padding: 20%;
+  }
+
+  .community ul {
+    border: 1px solid green;
+    float: none;
+    margin: 0 auto;
+    width: 40%;
+    padding: 0;
+  }
+
+  .community-container {
+    padding: 5rem 0;
+  }
+
+  .gram ul li,
+  .gram ul li:first-child {
+    float: none;
+    margin: 6% auto;
+    width: 100%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+@media (max-width: 320px) {
 }

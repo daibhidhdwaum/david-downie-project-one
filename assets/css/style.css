@@ -15,7 +15,8 @@ ul {
 h1,
 li a,
 h2,
-button {
+button,
+.community li a {
   font-family: "Nova Flat", sans-serif;
 }
 
@@ -78,7 +79,7 @@ p,
 }
 
 p,
-.address .community li a,
+.address,
 input[type="text"] {
   font-family: "Catamaran", sans-serif;
 }
@@ -129,8 +130,6 @@ footer
 .copy{
   clear: both;
 }
-
-
 
 header,
 .community{
@@ -268,7 +267,7 @@ h2 {
 
 /* gallery */
 .gram h2 {
-  margin: 5% 0 4%;
+  margin: 5% 0 3%;
 }
 
 .gram ul li {
@@ -294,6 +293,11 @@ footer button {
   background-color: #186684;
   color: #f4f4f4;
   margin-left: 0;
+  font-size: 2.2rem;
+}
+
+footer p{
+  font-size: 2rem;
 }
 
 input[type="text"] {
@@ -462,6 +466,10 @@ input[type="text"] {
     width: calc(50% - 2rem);
   }
 
+  .gram h2 {
+    margin: 6% auto;
+  }
+
   .giving-back-image,
   .giving-back-content {
     float: none;
@@ -480,13 +488,21 @@ input[type="text"] {
   }
 
   .giving-back h2 {
-    margin-top: 2rem;
+    margin-top: 8%;
   }
 
   .contact-info,
   .stay-updated {
     float: none;
     width: 100%;
+  }
+
+  .contact-info{
+    margin: 5rem 0;
+  }
+
+  .stay-updated h2{
+    margin: 3rem;
   }
 }
 
@@ -619,6 +635,10 @@ input[type="text"] {
 
   label[for="toggle"] {
     right: 4rem;
+  }
+
+  .footer-menu li {
+    padding: 0 6% 6%;
   }
 }
 
